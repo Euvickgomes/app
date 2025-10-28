@@ -23,4 +23,6 @@ Cada item da lista apresenta:
 Ao tocar em um item, o usuário é direcionado para uma nova tela com detalhes do serviço (via Intent explícita).
 Na tela de detalhes, o usuário pode realizar uma ligação telefônica para o estabelecimento.
 
+Link para imagens e video: https://drive.google.com/drive/folders/1vJpZwWplri_mX2lxPTHn-jMjmAvkU6GV?usp=drive_link
+
 O aplicativo também possui dois idiomas (inglês e português) e modo claro e escuro
