@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fundo">#F9F9F9</color>
+    <color name="cor_titulo">#333</color>
+    <color name="cor_div">#800080</color>
+    <color name="cor_quad">#FFFFFF</color>
+    <color name="cor_sel">#Ff99cc00</color>
+</resources>
