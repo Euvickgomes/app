@@ -4,8 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
-import com.example.myapplication.databinding.ActivityDetalheLojaBinding
 import com.bg.lojasapp.model.Loja
+import com.bg.lojasapp.databinding.ActivityDetalheLojaBinding
+
+
 
 class DetalheLojaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetalheLojaBinding
@@ -30,7 +32,7 @@ class DetalheLojaActivity : AppCompatActivity() {
         binding.tvNome.text = loja.nome
         binding.tvTelefone.text = loja.telefone
         binding.tvCategoria.text = loja.categoria
-        binding.imgFoto.setImageResource(loja.foto)
+        binding.imgFoto.setImageURI(loja.foto.toUri())
     }
 
     private fun setupListeners() {

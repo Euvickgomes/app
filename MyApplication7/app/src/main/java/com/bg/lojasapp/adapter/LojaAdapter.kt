@@ -1,40 +1,44 @@
 package com.bg.lojasapp.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
+import androidx.core.net.toUri
+import androidx.recyclerview.widget.RecyclerView
 import com.bg.lojasapp.model.Loja
-import com.example.myapplication.databinding.ItemLojaBinding
+import com.bg.lojasapp.databinding.ItemLojaBinding
 
 
 class LojaAdapter(
-    private val context: Context,
-    private val lista: List<Loja>
-) : ArrayAdapter<Loja>(context, 0, lista) {
+    private var lojas: List<Loja>,
+    private val onClick: (Loja) -> Unit
+) : RecyclerView.Adapter<LojaAdapter.ViewHolder>(){
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val binding: ItemLojaBinding
-        val itemView: View
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val binding = ItemLojaBinding.inflate(
+            LayoutInflater.from(parent.context), parent, false
+        )
+        return ViewHolder(binding)
+    }
 
-        if (convertView == null) {
-            binding = ItemLojaBinding.inflate(LayoutInflater.from(context), parent, false)
-            itemView = binding.root
-            itemView.tag = binding
-        } else {
-            itemView = convertView
-            binding = itemView.tag as ItemLojaBinding
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(lojas[position])
+    }
+
+    override fun getItemCount(): Int = lojas.size
+
+    fun updateLista(novasLojas: List<Loja>) {
+        this.lojas = novasLojas
+        notifyDataSetChanged()
+    }
+
+    inner class ViewHolder(val binding: ItemLojaBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(loja: Loja) {
+            binding.imgFoto.setImageURI(loja.foto.toUri())
+            binding.tvNome.text = loja.nome
+            binding.tvTelefone.text = loja.telefone
+            binding.tvCategoria.text = loja.categoria
+            binding.root.setOnClickListener { onClick(loja) }
         }
-
-        val loja = lista[position]
-
-        binding.imgFoto.setImageResource(loja.foto)
-        binding.tvNome.text = loja.nome
-        binding.tvTelefone.text = loja.telefone
-        binding.tvCategoria.text = loja.categoria
-
-        return itemView
     }
 
 }

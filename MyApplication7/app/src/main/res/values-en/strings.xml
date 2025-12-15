@@ -2,5 +2,11 @@
     <string name="app_name">Vick Stores</string>
     <string name="titulo">Stores</string>
     <string name="ligar">Call this store</string>
+    <string name="adicionar">Add Store</string>
+    <string name="filtro">Filter</string>
+    <string name="nome">Store Name</string>
+    <string name="categoria">Category</string>
+    <string name="telefone">Phone</string>
+    <string name="salvar">Salve</string>
     <string name="voltar">Return</string>
 </resources>

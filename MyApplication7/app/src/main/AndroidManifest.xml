@@ -10,10 +10,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LojasApp"
-        tools:targetApi="31">
+        android:theme="@style/Theme.LojasApp">
         <activity
             android:name="com.bg.lojasapp.ui.DetalheLojaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.bg.lojasapp.ui.CadastroLojaActivity"
             android:exported="true" />
         <activity
             android:name="com.bg.lojasapp.ui.MainActivity"
