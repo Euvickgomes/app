@@ -41,8 +41,7 @@ O aplicativo permite a listagem dinâmica de estabelecimentos, o cadastro de nov
 - ConstraintLayout como base de layout
 - Organização do código em pacotes semânticos (ui, data, model, adapter, etc.)
 
-## 🖼️ Screenshots
-
+ 🖼️ Screenshots
 
 **Tela de Cadastro em Português e Modo Branco**  
 ![Dark PT](MyApplication7/Imagens/cdt-light-pt.png)
@@ -56,8 +55,6 @@ O aplicativo permite a listagem dinâmica de estabelecimentos, o cadastro de nov
 **Lista de Lojas em Inglês e Modo Escuro**  
 ![Light PT](MyApplication7/Imagens/list-dark-en.png)
 
-[![Vídeo de apresentação](MyApplication7/Imagens/cdt-dark-en.png)](MyApplication7/Videos/video-rpd.mp4)
+🎥 Vídeos
 
-
-Link para imagens e video: https://drive.google.com/drive/folders/1vJpZwWplri_mX2lxPTHn-jMjmAvkU6GV?usp=drive_link
-
+▶️ [Clique aqui para assistir ao vídeo](MyApplication7/Videos/video-rpd.mp4)
