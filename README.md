@@ -57,4 +57,5 @@ O aplicativo permite a listagem dinâmica de estabelecimentos, o cadastro de nov
 
 🎥 Vídeos
 
-▶️ [Clique aqui para assistir ao vídeo](MyApplication7/Videos/video-rpd.mp4)
+▶️ [Clique aqui para assistir ao vídeo curto](MyApplication7/Videos/video-rpd.mp4)
+▶️ [Clique aqui para assistir ao vídeo longo](MyApplication7/Videos/video-longo.mp4)
